@@ -93,14 +93,14 @@ struct PodcastOverviewView: View {
             }
             
         } bottomContent: {
-            VStack{
+            VStack(spacing: 20){
                 PodcastOverviewView.podcastLink
                 RaisedButton(buttonText: "Listen Now", action: {
                     selection = 9
                     tabVisible = false
                 })
+                
             }
-            
         }
         
     }

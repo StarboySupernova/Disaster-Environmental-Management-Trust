@@ -21,12 +21,12 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
-                PageView(pages: modelData.features.map {FeatureCard(landmark: $0)})
+                PageView(pages: modelData.featuresContent.map {FeatureCard(podcast: $0)})
                     .aspectRatio(3/2, contentMode: .fit)
                     .listRowInsets(EdgeInsets())
 
-                ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
-                    CategoryRow(categoryName: key, items: modelData.categories[key]!)
+                ForEach(modelData.podcastCategories.keys.sorted(), id: \.self) { key in
+                    CategoryRow(categoryName: key, items: modelData.podcastCategories[key]!)
                 }
                 .listRowInsets(EdgeInsets())
             }

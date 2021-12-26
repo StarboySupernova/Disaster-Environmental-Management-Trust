@@ -24,7 +24,7 @@ struct PodcastsView: View {
                 }
                 .tag(Tab.featured)
 
-            LandmarkList()
+            PodcastList()
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
                 }

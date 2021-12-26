@@ -11,50 +11,62 @@ struct VideoDetailView: View {
     
     var video: Video
     var body: some View {
-        VStack(spacing: 20) {
-            Spacer()
-            
-            Image(video.imageName)
+        ZStack {
+            Image("masterBackground")
                 .resizable()
-                .scaledToFit()
-                .frame(height: 150)
-                .cornerRadius(30, corners: [.topRight, .bottomLeft])
+                .edgesIgnoringSafeArea(.all)
+                .blur(radius: 4)
+            MainGradientBackground()
+                .opacity(0.6)
             
-            Text(video.title)
-                .font(.title2)
-                .fontWeight(.semibold)
-                .lineLimit(2)
-                .multilineTextAlignment(.center)
-                .padding(.horizontal)
-            
-            HStack(spacing: 40) {
-                Label("\(video.viewCount)", systemImage: "eye.fill")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+            VStack(spacing: 20) {
+                Spacer()
                 
-                //Label("Label Placeholder", image: "demtCommunityDonation")
+                Image(video.imageName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 150)
+                    .cornerRadius(30, corners: [.topRight, .bottomLeft])
                 
-                Text(video.uploadDate)
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-            }
-            
-            Text(video.description)
-                .font(.body)
-                .padding()
-            
-            Spacer()
-            
-            Link(destination: video.url, label: {
-                Text("Watch Now")
-                    .bold()
+                Text(video.title)
                     .font(.title2)
-                    .frame(width: 250, height: 50)
-                    .background(Color(UIColor.systemRed))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+                    .fontWeight(.semibold)
+                    .lineLimit(2)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
                 
-            })
+                HStack(spacing: 40) {
+                    Label("\(video.viewCount)", systemImage: "eye.fill")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                    
+                    //Label("Label Placeholder", image: "demtCommunityDonation")
+                    
+                    Text(video.uploadDate)
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
+                
+                Text(video.description)
+                    .font(.body)
+                    .padding()
+                
+                Spacer()
+                
+                Link(destination: video.url, label: {
+                    Text("Watch Now")
+                        .bold()
+                        .font(.title2)
+                        .frame(width: 250, height: 50)
+                        .background(Color(UIColor.systemRed))
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .padding(.bottom, 35)
+                    
+                })
+    
+            }
+                
         }
     }
 }

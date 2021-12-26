@@ -8,18 +8,20 @@ A view showing a single category item.
 import SwiftUI
 
 struct CategoryItem: View {
-    var landmark: Landmark
+    var podcast: Podcast
 
     var body: some View {
         VStack(alignment: .leading) {
-            landmark.image
+            podcast.image
                 .renderingMode(.original)
                 .resizable()
                 .frame(width: 155, height: 155)
                 .cornerRadius(5)
-            Text(landmark.name)
+            Text(podcast.name)
                 .foregroundColor(.primary)
                 .font(.caption)
+                .frame(width: 175)
+                .truncationMode(.middle)
         }
         .padding(.leading, 15)
     }
@@ -27,6 +29,6 @@ struct CategoryItem: View {
 
 struct CategoryItem_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryItem(landmark: ModelData().landmarks[0])
+        CategoryItem(podcast: ModelData().podcasts[0])
     }
 }

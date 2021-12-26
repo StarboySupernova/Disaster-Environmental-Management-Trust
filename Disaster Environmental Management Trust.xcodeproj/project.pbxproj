@@ -46,6 +46,9 @@
 		737E028E27641DAF006E1C6C /* MainGradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737E028D27641DAF006E1C6C /* MainGradientBackground.swift */; };
 		737E0290276428AA006E1C6C /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737E028F276428AA006E1C6C /* LandingView.swift */; };
 		7382727A277810B0001ED26C /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73827279277810B0001ED26C /* Podcast.swift */; };
+		7382727D277815B6001ED26C /* PodcastDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7382727C277815B6001ED26C /* PodcastDetail.swift */; };
+		7382727F27781B52001ED26C /* PodcastList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7382727E27781B52001ED26C /* PodcastList.swift */; };
+		7382728127781CD7001ED26C /* PodcastRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7382728027781CD7001ED26C /* PodcastRow.swift */; };
 		7388727E276D78DF001CB8F6 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7388727D276D78DF001CB8F6 /* PageView.swift */; };
 		73887286276D7AE9001CB8F6 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 73887284276D7AE9001CB8F6 /* hikeData.json */; };
 		73887287276D7AE9001CB8F6 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 73887285276D7AE9001CB8F6 /* landmarkData.json */; };
@@ -107,6 +110,9 @@
 		737E028D27641DAF006E1C6C /* MainGradientBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainGradientBackground.swift; sourceTree = "<group>"; };
 		737E028F276428AA006E1C6C /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		73827279277810B0001ED26C /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		7382727C277815B6001ED26C /* PodcastDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetail.swift; sourceTree = "<group>"; };
+		7382727E27781B52001ED26C /* PodcastList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastList.swift; sourceTree = "<group>"; };
+		7382728027781CD7001ED26C /* PodcastRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastRow.swift; sourceTree = "<group>"; };
 		7388727D276D78DF001CB8F6 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		73887284276D7AE9001CB8F6 /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		73887285276D7AE9001CB8F6 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
@@ -256,6 +262,7 @@
 		737E02892764198D006E1C6C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7382727B27781582001ED26C /* Podcasts */,
 				7375B1F4276EB46A00F87B78 /* Profiles */,
 				7375B1ED276EB3AC00F87B78 /* Landmarks */,
 				7375B1E3276EB33500F87B78 /* Hikes */,
@@ -292,6 +299,16 @@
 				739DB50C2767813100F1D939 /* GeneralGradient.swift */,
 			);
 			path = Gradients;
+			sourceTree = "<group>";
+		};
+		7382727B27781582001ED26C /* Podcasts */ = {
+			isa = PBXGroup;
+			children = (
+				7382727C277815B6001ED26C /* PodcastDetail.swift */,
+				7382727E27781B52001ED26C /* PodcastList.swift */,
+				7382728027781CD7001ED26C /* PodcastRow.swift */,
+			);
+			path = Podcasts;
 			sourceTree = "<group>";
 		};
 		7388727F276D7A9C001CB8F6 /* Resources */ = {
@@ -407,6 +424,7 @@
 				732F40A7276ACF0E00E2B0D8 /* VideoListView.swift in Sources */,
 				739DD91C276D196E00F1740E /* PageViewController.swift in Sources */,
 				7375B1E9276EB35200F87B78 /* HikeDetail.swift in Sources */,
+				7382727D277815B6001ED26C /* PodcastDetail.swift in Sources */,
 				7375B1FA276EB71200F87B78 /* ProfileSummary.swift in Sources */,
 				7375B1F1276EB40300F87B78 /* LandmarkDetail.swift in Sources */,
 				7348D3B92756C29800EA5982 /* ContentView.swift in Sources */,
@@ -438,6 +456,7 @@
 				7382727A277810B0001ED26C /* Podcast.swift in Sources */,
 				73586BC52767466B0035417D /* CurvedTabView.swift in Sources */,
 				739DB50D2767813100F1D939 /* GeneralGradient.swift in Sources */,
+				7382727F27781B52001ED26C /* PodcastList.swift in Sources */,
 				732F40A5276AC97200E2B0D8 /* Video.swift in Sources */,
 				73B7E14E276D67810042F307 /* ModelData.swift in Sources */,
 				73A303D0276B94D300855185 /* VideoDetailView.swift in Sources */,
@@ -451,6 +470,7 @@
 				73B7E14C276D66410042F307 /* FeatureCard.swift in Sources */,
 				73B7E148276D5A1C0042F307 /* Landmark.swift in Sources */,
 				735937F92775FCB000F6CCC0 /* EmbossedButton.swift in Sources */,
+				7382728127781CD7001ED26C /* PodcastRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

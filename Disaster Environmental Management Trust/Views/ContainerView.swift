@@ -32,7 +32,7 @@ struct ContainerView<Content:View, BottomContent: View>: View {
                         Rectangle()
                             .foregroundColor(Color("background")) //enforcing uniform background color
                         LinearGradient(gradient: Gradient(colors: [Color("gradient-top"), .white]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                            .opacity(0.7)
+                            .opacity(0.75)
                             .cornerRadius(40, corners: [.bottomLeft])
                             .frame(width: geometry.size.width, height: geometry.size.height * 0.7)
                             .position(x: geometry.size.width / 2, y: 280)
@@ -49,6 +49,7 @@ struct ContainerView<Content:View, BottomContent: View>: View {
                     
                 bottomContent
                         .position(x: geometry.size.width / 2, y: geometry.size.height * 0.83)
+                        .zIndex(1)
                         
                 
                 VStack{

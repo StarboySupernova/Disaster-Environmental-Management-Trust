@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RaisedButton: View {
-    
+
     let buttonText: String
     let action: () -> Void
     
@@ -24,6 +24,12 @@ struct RaisedButton: View {
     }
 }
 
+struct RaisedColor {
+    var foregroundColor: String
+    var shadowColor: String
+    var highlightColor: String
+}
+
 extension Text {
     func raisedButtonTextStyle () -> some View {
         self
@@ -33,6 +39,7 @@ extension Text {
 }
 
 struct RaisedButtonStyle: ButtonStyle {
+    
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .frame(maxWidth: .infinity)
