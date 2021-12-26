@@ -10,23 +10,23 @@ import SwiftUI
 extension LandingView {
     static var images: some View {
       ZStack {
-        Image("aquaCulture")
+        Image("demtBaking")
           .resizedToFill(width: 100, height: 100)
           .clipShape(Circle())
           .offset(x: -88, y: 30)
-        Image("environmentalEffects")
+        Image("tomato")
           .resizedToFill(width: 40, height: 40)
           .clipShape(Circle())
           .offset(x: -54, y: -80)
-        Image("communityWork")
+        Image("demtCalories")
           .resizedToFill(width: 20, height: 20)
           .clipShape(Circle())
           .offset(x: -44, y: -40)
-        Image("communityDigging")
+        Image("demtCropRotation")
           .resizedToFill(width: 60, height: 60)
           .clipShape(Circle())
           .offset(x: -133, y: -60)
-        Image("demtIntroduction")
+        Image("demtDecemberCharity")
           .resizedToFill(width: 180, height: 180)
           .clipShape(Circle())
           .offset(x: 74)
@@ -41,7 +41,7 @@ extension LandingView {
     static var welcomeText: some View {
       return HStack(alignment: .bottom) {
         VStack(alignment: .leading) {
-          Text("DEMT")
+          Text("D.E.M.T.")
             .font(.largeTitle)
             .fontWeight(.black)
             .kerning(2)

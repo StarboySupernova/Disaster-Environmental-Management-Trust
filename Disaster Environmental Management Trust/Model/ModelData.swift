@@ -23,6 +23,22 @@ final class ModelData: ObservableObject {
             by: { $0.category.rawValue }
         )
     }
+    
+    @Published var podcasts: [Podcast] = load("podcastData.json")
+    //var hikes: [Hike] = load("hikeData.json")
+    //@Published var profile = Profile.default
+
+    var featuresContent: [Podcast] {
+        podcasts.filter { $0.isFeatured }
+    }
+
+    var podcastCategories: [String: [Podcast]] {
+        Dictionary(
+            grouping: podcasts,
+            by: { $0.category.rawValue }
+        )
+    }
+    
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

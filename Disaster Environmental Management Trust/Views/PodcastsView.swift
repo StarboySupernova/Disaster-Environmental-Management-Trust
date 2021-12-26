@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PodcastsView: View {
     @State private var selection: Tab = .featured
+    @Binding var tabVisible: Bool
 
     enum Tab {
         case featured
@@ -17,7 +18,7 @@ struct PodcastsView: View {
 
     var body: some View {
         TabView(selection: $selection) {
-            CategoryHome()
+            CategoryHome(tabVisible: $tabVisible)
                 .tabItem {
                     Label("Featured", systemImage: "star")
                 }
@@ -34,7 +35,7 @@ struct PodcastsView: View {
 
 struct PodcastsView_Previews: PreviewProvider {
     static var previews: some View {
-        PodcastsView()
+        PodcastsView(tabVisible: .constant(false))
             .environmentObject(ModelData())
     }
 }

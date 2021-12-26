@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var selection: Int = 0
+    @State private var tabVisible: Bool = true
     
     var body: some View {
         VStack (alignment: .center, spacing: 0) {
@@ -19,7 +20,7 @@ struct ContentView: View {
                 if (selection == 0) {
                     landingContent()
                 } else if (selection == 1 ) {
-                    videosContent()
+                    VideoListView()
                 } else if (selection == 2) {
                     operationMapsContent()
                 } else if (selection == 3) {
@@ -27,26 +28,18 @@ struct ContentView: View {
                 } else if (selection == 4) {
                     forumContent()
                 }
+                else if (selection == 5){
+                    aboutUsContent()
+                }
+                else if (selection == 9){
+                    PodcastsView(tabVisible: $tabVisible)
+                }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-            HStack(alignment: .lastTextBaseline){
-                CustomTabBarItem(iconName: "house.circle.fill", label: "Home", selection: $selection, tag: 0)
-                CustomTabBarItem(iconName: "play.tv.fill", label: "Film", selection: $selection, tag: 1)
-                CustomTabBarItem(iconName: "globe.europe.africa.fill", label: "Operations", selection: $selection, tag: 2)
-                CustomTabBarItem(iconName: "waveform.and.mic", label: "Podcasts", selection: $selection, tag: 3)
-                CustomTabBarItem(iconName: "paperplane.circle.fill", label: "Forum", selection: $selection, tag: 4)
-                CustomTabBarItem(iconName: "person.3.fill", label: "About Us", selection: $selection, tag: 5)
+            if tabVisible {
+                MainBottomTabBar(selection: $selection)
             }
-            .background(
-                GeometryReader { parentGeometry in
-                    Rectangle()
-                        .fill(Color(UIColor.systemGray2))
-                        .frame(width: parentGeometry.size.width, height: 0.5)
-                        .position(x: parentGeometry.size.width / 2, y: 0)
-                        .cornerRadius(90)
-                }
-            )
-            .background(Color(UIColor.systemGray6))
+            
             
             
         }
@@ -59,23 +52,23 @@ struct ContentView: View {
     }
     
     private func videosContent () -> some View {
-        return Text("Recents Content")
+        return Text("Videos Content")
     }
     
     private func operationMapsContent () -> some View {
-        return Text("Contacts Content")
+        return Text("OperationsMaps Content")
     }
     
     private func podcastsContent () -> some View {
-        return PodcastOverviewView()
+        return PodcastOverviewView(selection: $selection, tabVisible: $tabVisible)
     }
     
     private func forumContent () -> some View {
-        return Text("Voicemail Content")
+        return Text("Forum Content")
     }
     
     private func aboutUsContent () -> some View {
-        return Text("About Us")
+        return Text("About Us Content")
     }
 }
 

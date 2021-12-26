@@ -25,8 +25,10 @@ struct VideoListView: View {
                         VStack (alignment: .leading, spacing: 5) {
                             Text(video.title)
                                 .fontWeight(.semibold)
+                                .font(.system(size: 25))
                                 .lineLimit(2)
                                 .minimumScaleFactor(0.5)
+                                
                             
                             Text(video.uploadDate)
                                 .font(.subheadline)

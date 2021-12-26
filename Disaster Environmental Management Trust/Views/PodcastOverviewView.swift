@@ -10,27 +10,27 @@ import Liquid
 
 struct PodcastOverviewView: View {
     
+    
+    @Binding var selection: Int
+    @Binding var tabVisible: Bool
     static var listenersCount: Int = 17
     
     var body: some View {
         ContainerView{
-            
             GeometryReader { geometry in
                 
             ZStack {
-                
-                    
-                        ZStack {
-                            Rectangle()
-                                .frame(width: geometry.size.width * 0.3, height: 270)
-                                .foregroundColor(.gray)
-                            Image("demtCommunityDonation")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: geometry.size.width * 0.3, height: 270)
-                                .blur(radius: 2)
-                                
-                        }
+                    ZStack {
+                        Rectangle()
+                            .frame(width: geometry.size.width * 0.3, height: 270)
+                            .foregroundColor(.gray)
+                        Image("demtCommunityDonation")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: geometry.size.width * 0.3, height: 270)
+                            .blur(radius: 2)
+                            
+                    }
                         .cornerRadius(50, corners: [.topRight, .bottomLeft])
                         .position(x: geometry.size.width / 5.5, y: geometry.size.height * 0.575)
                     
@@ -93,7 +93,14 @@ struct PodcastOverviewView: View {
             }
             
         } bottomContent: {
-            PodcastOverviewView.podcastLink
+            VStack{
+                PodcastOverviewView.podcastLink
+                RaisedButton(buttonText: "Listen Now", action: {
+                    selection = 9
+                    tabVisible = false
+                })
+            }
+            
         }
         
     }
@@ -101,6 +108,6 @@ struct PodcastOverviewView: View {
 
 struct PodcastOverviewView_Previews: PreviewProvider {
     static var previews: some View {
-        PodcastOverviewView()
+        PodcastOverviewView(selection: .constant(9), tabVisible: .constant(true))
     }
 }

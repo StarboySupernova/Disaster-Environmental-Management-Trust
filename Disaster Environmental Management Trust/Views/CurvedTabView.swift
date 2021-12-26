@@ -12,26 +12,26 @@ struct CurvedTabView: View {
     
     var body: some View {
         ZStack {
-            Image("rural")
+            Image("masterBackground")
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
-                .blur(radius: 60)
+                .blur(radius: 1)
                 .frame(width: 300, height: 700)
             MainGradientBackground()
-                .opacity(0.6)
+                .opacity(0.8)
             GeometryReader {geometry in
                 VStack (spacing: geometry.size.height * 0.025) {
                     ZStack {
                         GeneralGradient()
-                            .opacity(0.4)
+                            .opacity(0.55)
                         LandingView.images
                             .frame(width: geometry.size.width, height: geometry.size.height)
                     }
                     .frame(width: geometry.size.width, height: geometry.size.height * 0.3)
                     .cornerRadius(40, corners: [.bottomRight, .topLeft])
-                    .shadow(color: Color("background"), radius: 4, x: 6, y: 6)
-                    .shadow(color: Color("background"), radius: 4, x: -6, y: -6)
+                    .shadow(color: Color("background"), radius: 3, x: 6, y: 6)
+                    .shadow(color: Color("background"), radius: 3, x: -6, y: -6)
                     
                     ZStack {
                         Liquid()
@@ -53,10 +53,10 @@ struct CurvedTabView: View {
                             .frame(width: geometry.size.width * 0.7, height: 320)
                             .opacity(0.1)
                             .foregroundColor(.cyan)
-                        Image("DEMTLogo")
+                        Image("greenLogoSmall")
                             .resizable()
                             .scaledToFill()
-                            .frame(width: geometry.size.width * 0.37, height: 150)
+                            .frame(width: geometry.size.width * 0.5, height: 200)
                             .mask(Liquid())
                     }
                     

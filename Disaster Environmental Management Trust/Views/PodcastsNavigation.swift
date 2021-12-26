@@ -12,7 +12,7 @@ extension PodcastOverviewView {
         VStack{
             
             
-            NavigationLink(destination: PodcastsView(), label: {
+            NavigationLink(destination: PodcastsView(tabVisible: .constant(false)), label: {
                 HStack(spacing: 0){
                     VStack {
                         Image("demtCommunityDonation")
@@ -31,13 +31,15 @@ extension PodcastOverviewView {
                     }
                     
                     VStack(spacing: 20) {
-                        Text("Podcasts")
+                       /* Text("Podcasts")
                             .font(.system(size: 25))
                             .fontWeight(.heavy)
                             .foregroundColor(.black)
                             .frame(width: 150, height: 30)
                             .background(Color.blue)
-                            .cornerRadius(10)
+                            .cornerRadius(10) */
+                        
+                            
                         
                         Text("Enlightened youth-led discourse on grassroots community capacity building and the sustainable mitigation of pertinent issues affecting communities in the catchment area")
                             .font(.caption)

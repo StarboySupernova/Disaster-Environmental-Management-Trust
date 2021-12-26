@@ -16,6 +16,7 @@ import SwiftUI
 struct CategoryHome: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showingProfile = false
+    @Binding var tabVisible: Bool
 
     var body: some View {
         NavigationView {
@@ -30,13 +31,22 @@ struct CategoryHome: View {
                 .listRowInsets(EdgeInsets())
             }
             .listStyle(.inset)
-            .navigationTitle("Featured")
+            .navigationTitle("Podcasts")
             .toolbar {
-                Button {
-                    showingProfile.toggle()
-                } label: {
-                    Label("User Profile", systemImage: "person.crop.circle")
+                HStack {
+                    Button {
+                        showingProfile.toggle()
+                    } label: {
+                        Label("User Profile", systemImage: "person.crop.circle")
+                    }
+                
+                    Button {
+                        tabVisible = true
+                    } label: {
+                        Label("Back", systemImage: "arrowshape.turn.up.backward.fill")
+                    }
                 }
+                
             }
             .sheet(isPresented: $showingProfile) {
                 ProfileHost()
@@ -48,7 +58,7 @@ struct CategoryHome: View {
 
 struct CategoryHome_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryHome()
+        CategoryHome(tabVisible: .constant(false))
             .environmentObject(ModelData())
     }
 }

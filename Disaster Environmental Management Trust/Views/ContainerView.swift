@@ -30,7 +30,7 @@ struct ContainerView<Content:View, BottomContent: View>: View {
                 GeometryReader { geometry in
                     ZStack{
                         Rectangle()
-                            .foregroundColor(Color("background"))
+                            .foregroundColor(Color("background")) //enforcing uniform background color
                         LinearGradient(gradient: Gradient(colors: [Color("gradient-top"), .white]), startPoint: .topLeading, endPoint: .bottomTrailing)
                             .opacity(0.7)
                             .cornerRadius(40, corners: [.bottomLeft])
@@ -63,7 +63,7 @@ struct ContainerView<Content:View, BottomContent: View>: View {
                             //.edgesIgnoringSafeArea(.bottom)
                     }
                     
-                    //bottomContent
+                    
                     
                 }
         }
