@@ -68,7 +68,7 @@ struct ContentView: View {
     }
     
     private func aboutUsContent () -> some View {
-        return Text("About Us Content")
+        return AboutUs()
     }
 }
 

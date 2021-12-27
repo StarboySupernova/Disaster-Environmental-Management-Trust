@@ -45,6 +45,8 @@
 		7375B1FA276EB71200F87B78 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7375B1F7276EB71100F87B78 /* ProfileSummary.swift */; };
 		737E028E27641DAF006E1C6C /* MainGradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737E028D27641DAF006E1C6C /* MainGradientBackground.swift */; };
 		737E0290276428AA006E1C6C /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737E028F276428AA006E1C6C /* LandingView.swift */; };
+		7381FD822778C92900C8C3A7 /* StepperView in Frameworks */ = {isa = PBXBuildFile; productRef = 7381FD812778C92900C8C3A7 /* StepperView */; };
+		7381FD842778CCCB00C8C3A7 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7381FD832778CCCB00C8C3A7 /* AboutUs.swift */; };
 		7382727A277810B0001ED26C /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73827279277810B0001ED26C /* Podcast.swift */; };
 		7382727D277815B6001ED26C /* PodcastDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7382727C277815B6001ED26C /* PodcastDetail.swift */; };
 		7382727F27781B52001ED26C /* PodcastList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7382727E27781B52001ED26C /* PodcastList.swift */; };
@@ -109,6 +111,7 @@
 		7375B1F7276EB71100F87B78 /* ProfileSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		737E028D27641DAF006E1C6C /* MainGradientBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainGradientBackground.swift; sourceTree = "<group>"; };
 		737E028F276428AA006E1C6C /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		7381FD832778CCCB00C8C3A7 /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
 		73827279277810B0001ED26C /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		7382727C277815B6001ED26C /* PodcastDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetail.swift; sourceTree = "<group>"; };
 		7382727E27781B52001ED26C /* PodcastList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastList.swift; sourceTree = "<group>"; };
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73EF26642768BEC900BAFED2 /* Liquid in Frameworks */,
+				7381FD822778C92900C8C3A7 /* StepperView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +292,7 @@
 				7388A4B42772068100E10966 /* ContainerView.swift */,
 				735937F62775FACC00F6CCC0 /* RaisedButton.swift */,
 				735937F82775FCB000F6CCC0 /* EmbossedButton.swift */,
+				7381FD832778CCCB00C8C3A7 /* AboutUs.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 			name = "Disaster Environmental Management Trust";
 			packageProductDependencies = (
 				73EF26632768BEC900BAFED2 /* Liquid */,
+				7381FD812778C92900C8C3A7 /* StepperView */,
 			);
 			productName = "Disaster Environmental Management Trust";
 			productReference = 7348D3B32756C29800EA5982 /* Disaster Environmental Management Trust.app */;
@@ -387,6 +393,7 @@
 			mainGroup = 7348D3AA2756C29800EA5982;
 			packageReferences = (
 				73EF26622768BEC900BAFED2 /* XCRemoteSwiftPackageReference "liquid" */,
+				7381FD802778C92900C8C3A7 /* XCRemoteSwiftPackageReference "StepperView" */,
 			);
 			productRefGroup = 7348D3B42756C29800EA5982 /* Products */;
 			projectDirPath = "";
@@ -420,6 +427,7 @@
 				7375B1DB276EB2DF00F87B78 /* HexagonParameters.swift in Sources */,
 				7375B1F8276EB71200F87B78 /* ProfileEditor.swift in Sources */,
 				7375B1EA276EB35200F87B78 /* HikeGraph.swift in Sources */,
+				7381FD842778CCCB00C8C3A7 /* AboutUs.swift in Sources */,
 				7375B1E1276EB31800F87B78 /* CircleImage.swift in Sources */,
 				732F40A7276ACF0E00E2B0D8 /* VideoListView.swift in Sources */,
 				739DD91C276D196E00F1740E /* PageViewController.swift in Sources */,
@@ -675,6 +683,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7381FD802778C92900C8C3A7 /* XCRemoteSwiftPackageReference "StepperView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/badrinathvm/StepperView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		73EF26622768BEC900BAFED2 /* XCRemoteSwiftPackageReference "liquid" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/maustinstar/liquid";
@@ -686,6 +702,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7381FD812778C92900C8C3A7 /* StepperView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7381FD802778C92900C8C3A7 /* XCRemoteSwiftPackageReference "StepperView" */;
+			productName = StepperView;
+		};
 		73EF26632768BEC900BAFED2 /* Liquid */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 73EF26622768BEC900BAFED2 /* XCRemoteSwiftPackageReference "liquid" */;

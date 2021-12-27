@@ -27,6 +27,7 @@ struct VideoDetailView: View {
                     .scaledToFit()
                     .frame(height: 150)
                     .cornerRadius(30, corners: [.topRight, .bottomLeft])
+                    .shadow(color: Color(.black), radius: 6, x: 5, y: 5)
                 
                 Text(video.title)
                     .font(.title2)
@@ -39,12 +40,14 @@ struct VideoDetailView: View {
                     Label("\(video.viewCount)", systemImage: "eye.fill")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
+                        .shadow(color: Color(.black), radius: 6, x: 5, y: 5)
                     
                     //Label("Label Placeholder", image: "demtCommunityDonation")
                     
                     Text(video.uploadDate)
                         .font(.subheadline)
                         .foregroundColor(.secondary)
+                        .shadow(color: Color(.black), radius: 6, x: 5, y: 5)
                 }
                 
                 Text(video.description)

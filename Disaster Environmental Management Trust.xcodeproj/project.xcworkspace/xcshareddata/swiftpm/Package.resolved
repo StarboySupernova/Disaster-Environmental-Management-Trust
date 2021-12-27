@@ -9,6 +9,15 @@
           "revision": "9123b9d1fb24c8273c989924b4e889f07629a26b",
           "version": "0.0.2"
         }
+      },
+      {
+        "package": "StepperView",
+        "repositoryURL": "https://github.com/badrinathvm/StepperView",
+        "state": {
+          "branch": null,
+          "revision": "c66fb84c640fbc312f4eead0b7ae2a77f93e0839",
+          "version": "1.6.7"
+        }
       }
     ]
   },
