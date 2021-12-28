@@ -131,7 +131,11 @@ struct DemtOrgData {
     ]
 
     struct DemtAboutUsPitstops {
-        static var p1 = "NEW PROJECT ALERT: We are proud to launch a new project called 'Promoting meaningful community involvement in the Zimbabwe National TB Program through Community Disease Committees (CDCs) to  enhance access to services and to break down barriers' "
+        static var p1 = """
+                NEW PROJECT ALERT: We are proud to launch a new project called 'Promoting meaningful community involvement
+                    in the Zimbabwe National TB Program through Community Disease Committees
+                (CDCs) to  enhance access to services and to break down barriers'
+            """
         static var p2 = "DEMT's highest decision-making body is the Board of Trustees which is responsible for setting organisational policies, providing guidance and direction to its secretariat as well as supervision of DEMT's activities. The second level is the secretariat which is hired by the Board to implement the organisation's programmes, projects and other activities. The secretariat is headed by the Head of Programs who is responsible for ensuring staff accountability and compliance to operational procedures & guidelines"
         static var p3 = "DEMT maintains a strong field presence with four (4) full time staff, and at least seven (7) qualified and results oriented volunteers. The organisation's employees are drawn from the local communities and they possess an in-depttn understanding of DEMT's geographical area of operation, local languages, cultural norms, values and beliefs. The staff is responsible for the implementation of development programs in four areas namely Emergency Response, Resilience Building, Community Development and Monitoring and Evaluation"
         static var p4 = "• Responding to natural or man­ made disasters and epidemics. • Capacity building of rural communities to establish income generating projects and run viable socio-economic development activities. • Promoting holistic environmental protection and rehabilitation in communities around Zimbabwe. • Promoting food security in rural communities through agricultural practices that include small irrigation schemes"

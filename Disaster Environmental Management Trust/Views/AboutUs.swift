@@ -7,19 +7,13 @@
 
 import SwiftUI
 import StepperView
+import simd
 
 struct AboutUs: View {
     
     let DemtData = DemtOrgData()
     
-    @State var showSheet = false
-    @State var selectedGroup: InfoGrouping? = nil
-    
-    @State var showLeadingGroup = false
-    @State var showLeadMiddleGroup = false
-    @State var showMiddleGroup = false
-    @State var showMiddleTrailingGroup = false
-    @State var showTrailingGroup = false
+    @State private var selectedTab = 9
     
     enum InfoGrouping: CaseIterable, Identifiable {
         var id: Int {hashValue}
@@ -100,85 +94,34 @@ struct AboutUs: View {
     
     /*
      ScrollViewReader { scrollview in
-     ScrollView([.horizontal]) {
-         HStack(alignment: .center) {
-             ForEach(InfoGrouping.allCases){ index in
-                 HStack{
-                     infoGroups(index)
+         ScrollView([.horizontal]) {
+             HStack(alignment: .center) {
+                 ForEach(InfoGrouping.allCases){ index in
+                     HStack{
+                         infoGroups(index)
+                     }
                  }
              }
          }
-         
      }
- }
      */
     
     
     var body: some View {
-        ZStack {
-            ContainerView {
-                HStack {
-                    Text("Organizational Profile")
-                        .font(.largeTitle)
-                        .fontWeight(.black)
-                        .kerning(2)
-                }
-            } bottomContent: {
-                GeometryReader {geometry in
-                    VStack {
-                        Image("demtTeam")
-                            .resizedToFill(width: geometry.size.width, height: geometry.size.height * 0.3)
-                        navigationButton
-                    }
+        ZStack{
+            MainGradientBackground()
+            TabView(selection: $selectedTab){
+                TeamView(selectedTab: $selectedTab)
+                    .tag(9)
+                ForEach(InfoGrouping.allCases){index in
+                    infoGroups(index)
+                        .tag(index)
                 }
             }
-            .sheet(isPresented: $showSheet, onDismiss: {}, content: {
-                if let selectedGroup = selectedGroup {
-                    switch selectedGroup {
-                    case .leadingGroup :
-                        infoGroups(selectedGroup)
-                    case .leadMiddleGroup :
-                        infoGroups(selectedGroup)
-                    case .middleGroup:
-                        infoGroups(selectedGroup)
-                    case .middleTrailingGroup:
-                        infoGroups(selectedGroup)
-                    case .trailingGroup:
-                        infoGroups(selectedGroup)
-                    }
-                }
-            })
         }
     }
     
-    var navigationButton: some View {
-        Button(action: {
-            showSheet = true
-            selectedGroup = .leadingGroup
-        }, label: {
-            Text("Next")
-                .fontWeight(.bold)
-                .padding([.leading, .trailing], 5)
-        })
-            .padding(.bottom, 10)
-            .buttonStyle(EmbossedButtonStyle())
-    }
     
-    /*
-     var historyButton: some View {
-         Button(action: {
-             showSheet = true
-             showHistory = true
-             exerciseSheet = .history
-         }, label: {
-             Text(NSLocalizedString("History", comment: "view user activity"))
-                 .fontWeight(.bold)
-                 .padding([.leading, .trailing], 5)
-         })
-             .padding(.bottom, 10)
-             .buttonStyle(EmbossedButtonStyle())
-     }
-     */
 }
 
 struct AboutUs_Previews: PreviewProvider {
