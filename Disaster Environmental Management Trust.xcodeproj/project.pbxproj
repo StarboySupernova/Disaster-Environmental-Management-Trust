@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7302DA3527716A5A00F6EF78 /* PodcastOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7302DA3427716A5A00F6EF78 /* PodcastOverviewView.swift */; };
+		730AB83A277A7809006C2BAC /* DemtOrgData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730AB839277A7809006C2BAC /* DemtOrgData.swift */; };
 		731898E92776C9500073AC67 /* MainBottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731898E82776C9500073AC67 /* MainBottomTabBar.swift */; };
 		732F40A5276AC97200E2B0D8 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F40A4276AC97200E2B0D8 /* Video.swift */; };
 		732F40A7276ACF0E00E2B0D8 /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F40A6276ACF0E00E2B0D8 /* VideoListView.swift */; };
@@ -73,6 +74,7 @@
 
 /* Begin PBXFileReference section */
 		7302DA3427716A5A00F6EF78 /* PodcastOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastOverviewView.swift; sourceTree = "<group>"; };
+		730AB839277A7809006C2BAC /* DemtOrgData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemtOrgData.swift; sourceTree = "<group>"; };
 		731898E82776C9500073AC67 /* MainBottomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBottomTabBar.swift; sourceTree = "<group>"; };
 		732F40A4276AC97200E2B0D8 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		732F40A6276ACF0E00E2B0D8 /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				73B7E147276D5A1C0042F307 /* Landmark.swift */,
 				732F40A4276AC97200E2B0D8 /* Video.swift */,
 				73827279277810B0001ED26C /* Podcast.swift */,
+				730AB839277A7809006C2BAC /* DemtOrgData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				7382727A277810B0001ED26C /* Podcast.swift in Sources */,
 				73586BC52767466B0035417D /* CurvedTabView.swift in Sources */,
 				739DB50D2767813100F1D939 /* GeneralGradient.swift in Sources */,
+				730AB83A277A7809006C2BAC /* DemtOrgData.swift in Sources */,
 				7382727F27781B52001ED26C /* PodcastList.swift in Sources */,
 				732F40A5276AC97200E2B0D8 /* Video.swift in Sources */,
 				73B7E14E276D67810042F307 /* ModelData.swift in Sources */,
