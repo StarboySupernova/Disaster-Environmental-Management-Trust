@@ -10,6 +10,7 @@
 		7302DA3527716A5A00F6EF78 /* PodcastOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7302DA3427716A5A00F6EF78 /* PodcastOverviewView.swift */; };
 		730AB83A277A7809006C2BAC /* DemtOrgData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730AB839277A7809006C2BAC /* DemtOrgData.swift */; };
 		731898E92776C9500073AC67 /* MainBottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731898E82776C9500073AC67 /* MainBottomTabBar.swift */; };
+		73218A7C277D21950024BD1A /* TeamViewDetailOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73218A7B277D21950024BD1A /* TeamViewDetailOverlay.swift */; };
 		732F40A5276AC97200E2B0D8 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F40A4276AC97200E2B0D8 /* Video.swift */; };
 		732F40A7276ACF0E00E2B0D8 /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F40A6276ACF0E00E2B0D8 /* VideoListView.swift */; };
 		7348A4CD2770A3BD00F4C62B /* PodcastsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7348A4CC2770A3BD00F4C62B /* PodcastsView.swift */; };
@@ -20,6 +21,7 @@
 		73586BC52767466B0035417D /* CurvedTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73586BC42767466B0035417D /* CurvedTabView.swift */; };
 		735937F72775FACC00F6CCC0 /* RaisedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735937F62775FACC00F6CCC0 /* RaisedButton.swift */; };
 		735937F92775FCB000F6CCC0 /* EmbossedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735937F82775FCB000F6CCC0 /* EmbossedButton.swift */; };
+		73666B43277BD672009198A6 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73666B42277BD672009198A6 /* TeamView.swift */; };
 		736E92D62773D8A4007B01A4 /* PodcastsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736E92D52773D8A4007B01A4 /* PodcastsNavigation.swift */; };
 		7375B1C5276E897C00F87B78 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7375B1C4276E897C00F87B78 /* PageControl.swift */; };
 		7375B1CA276EAB1F00F87B78 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7375B1C7276EAB1F00F87B78 /* CategoryHome.swift */; };
@@ -59,9 +61,6 @@
 		739DB50B276768BF00F1D939 /* ExtensionOnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DB50A276768BF00F1D939 /* ExtensionOnView.swift */; };
 		739DB50D2767813100F1D939 /* GeneralGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DB50C2767813100F1D939 /* GeneralGradient.swift */; };
 		739DD91C276D196E00F1740E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DD91B276D196E00F1740E /* PageViewController.swift */; };
-		73A011CE277B6B88003A1C8F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A011CD277B6B88003A1C8F /* HeaderView.swift */; };
-		73A011D0277B6CE8003A1C8F /* ContainmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A011CF277B6CE8003A1C8F /* ContainmentView.swift */; };
-		73A011D2277B6DC5003A1C8F /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A011D1277B6DC5003A1C8F /* TeamView.swift */; };
 		73A303D0276B94D300855185 /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A303CF276B94D300855185 /* VideoDetailView.swift */; };
 		73B7E148276D5A1C0042F307 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B7E147276D5A1C0042F307 /* Landmark.swift */; };
 		73B7E14C276D66410042F307 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B7E14B276D66410042F307 /* FeatureCard.swift */; };
@@ -79,6 +78,7 @@
 		7302DA3427716A5A00F6EF78 /* PodcastOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastOverviewView.swift; sourceTree = "<group>"; };
 		730AB839277A7809006C2BAC /* DemtOrgData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemtOrgData.swift; sourceTree = "<group>"; };
 		731898E82776C9500073AC67 /* MainBottomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBottomTabBar.swift; sourceTree = "<group>"; };
+		73218A7B277D21950024BD1A /* TeamViewDetailOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewDetailOverlay.swift; sourceTree = "<group>"; };
 		732F40A4276AC97200E2B0D8 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		732F40A6276ACF0E00E2B0D8 /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
 		7348A4CC2770A3BD00F4C62B /* PodcastsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsView.swift; sourceTree = "<group>"; };
@@ -90,6 +90,7 @@
 		73586BC42767466B0035417D /* CurvedTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedTabView.swift; sourceTree = "<group>"; };
 		735937F62775FACC00F6CCC0 /* RaisedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisedButton.swift; sourceTree = "<group>"; };
 		735937F82775FCB000F6CCC0 /* EmbossedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbossedButton.swift; sourceTree = "<group>"; };
+		73666B42277BD672009198A6 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		736E92D52773D8A4007B01A4 /* PodcastsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsNavigation.swift; sourceTree = "<group>"; };
 		7375B1C4276E897C00F87B78 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		7375B1C7276EAB1F00F87B78 /* CategoryHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
@@ -128,9 +129,6 @@
 		739DB50A276768BF00F1D939 /* ExtensionOnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionOnView.swift; sourceTree = "<group>"; };
 		739DB50C2767813100F1D939 /* GeneralGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralGradient.swift; sourceTree = "<group>"; };
 		739DD91B276D196E00F1740E /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		73A011CD277B6B88003A1C8F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		73A011CF277B6CE8003A1C8F /* ContainmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainmentView.swift; sourceTree = "<group>"; };
-		73A011D1277B6DC5003A1C8F /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		73A303CF276B94D300855185 /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
 		73B7E147276D5A1C0042F307 /* Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		73B7E14B276D66410042F307 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
@@ -302,9 +300,8 @@
 				735937F62775FACC00F6CCC0 /* RaisedButton.swift */,
 				735937F82775FCB000F6CCC0 /* EmbossedButton.swift */,
 				7381FD832778CCCB00C8C3A7 /* AboutUs.swift */,
-				73A011CD277B6B88003A1C8F /* HeaderView.swift */,
-				73A011CF277B6CE8003A1C8F /* ContainmentView.swift */,
-				73A011D1277B6DC5003A1C8F /* TeamView.swift */,
+				73666B42277BD672009198A6 /* TeamView.swift */,
+				73218A7B277D21950024BD1A /* TeamViewDetailOverlay.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -445,7 +442,6 @@
 				739DD91C276D196E00F1740E /* PageViewController.swift in Sources */,
 				7375B1E9276EB35200F87B78 /* HikeDetail.swift in Sources */,
 				7382727D277815B6001ED26C /* PodcastDetail.swift in Sources */,
-				73A011D0277B6CE8003A1C8F /* ContainmentView.swift in Sources */,
 				7375B1FA276EB71200F87B78 /* ProfileSummary.swift in Sources */,
 				7375B1F1276EB40300F87B78 /* LandmarkDetail.swift in Sources */,
 				7348D3B92756C29800EA5982 /* ContentView.swift in Sources */,
@@ -462,14 +458,15 @@
 				7375B1CB276EAB1F00F87B78 /* CategoryRow.swift in Sources */,
 				7375B1D8276EB2DF00F87B78 /* Badge.swift in Sources */,
 				7375B1E0276EB31800F87B78 /* MapView.swift in Sources */,
-				73A011CE277B6B88003A1C8F /* HeaderView.swift in Sources */,
 				7375B1F3276EB40300F87B78 /* LandmarkList.swift in Sources */,
 				7388727E276D78DF001CB8F6 /* PageView.swift in Sources */,
 				7375B1DA276EB2DF00F87B78 /* BadgeSymbol.swift in Sources */,
 				737E0290276428AA006E1C6C /* LandingView.swift in Sources */,
+				73218A7C277D21950024BD1A /* TeamViewDetailOverlay.swift in Sources */,
 				7388A4B52772068100E10966 /* ContainerView.swift in Sources */,
 				736E92D62773D8A4007B01A4 /* PodcastsNavigation.swift in Sources */,
 				73B7E150276D68A20042F307 /* Hike.swift in Sources */,
+				73666B43277BD672009198A6 /* TeamView.swift in Sources */,
 				7375B1CC276EAB1F00F87B78 /* CategoryItem.swift in Sources */,
 				731898E92776C9500073AC67 /* MainBottomTabBar.swift in Sources */,
 				7375B1C5276E897C00F87B78 /* PageControl.swift in Sources */,
@@ -483,7 +480,6 @@
 				732F40A5276AC97200E2B0D8 /* Video.swift in Sources */,
 				73B7E14E276D67810042F307 /* ModelData.swift in Sources */,
 				73A303D0276B94D300855185 /* VideoDetailView.swift in Sources */,
-				73A011D2277B6DC5003A1C8F /* TeamView.swift in Sources */,
 				7375B1D6276EB2DF00F87B78 /* BadgeBackground.swift in Sources */,
 				737E028E27641DAF006E1C6C /* MainGradientBackground.swift in Sources */,
 				7302DA3527716A5A00F6EF78 /* PodcastOverviewView.swift in Sources */,

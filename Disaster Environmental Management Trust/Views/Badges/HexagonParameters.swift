@@ -1,5 +1,4 @@
 /*
-See LICENSE folder for this sample’s licensing information.
 
 Abstract:
 Size, position, and other information used to draw a badge.

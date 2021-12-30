@@ -32,7 +32,7 @@ struct PodcastDetail: View {
                 .offset(y: -130)
                 .padding(.bottom, -130)
 
-            VStack(alignment: .leading) {
+            VStack(alignment: .center) {
                 HStack {
                     Text(podcast.name)
                         .font(.title)
@@ -52,6 +52,42 @@ struct PodcastDetail: View {
                 Text("About \(podcast.name)")
                     .font(.title2)
                 Text(podcast.description)
+                HStack {
+                    Button(action: {
+                    }) {
+                        Image(systemName: "backward.end.fill")
+                            .font(.system(size: 50))
+                            .foregroundColor(.black)
+                    }
+
+                    Button(action: {
+                    }) {
+                        Image(systemName: "arrowtriangle.backward.circle")
+                            .font(.system(size: 50))
+                            .foregroundColor(.black)
+                    }
+                    
+                    Button(action: {
+                    }) {
+                        Image(systemName: "play.square")
+                            .font(.system(size: 50))
+                            .foregroundColor(.black)
+                    }
+                    
+                    Button(action: {}, label: {
+                        Image(systemName: "arrowtriangle.forward.circle")
+                            .font(.system(size: 50))
+                            .foregroundColor(.black)
+                    })
+
+                    Button(action: {
+                    }) {
+                        Image(systemName: "forward.end.fill")
+                            .font(.system(size: 50))
+                            .foregroundColor(.black)
+                    }
+                }
+                .frame(height: 70)
             }
             .padding()
         }

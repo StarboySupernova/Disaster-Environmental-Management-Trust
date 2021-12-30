@@ -19,8 +19,8 @@ struct ProfileSummary: View {
                     .font(.title)
 
                 Text("Notifications: \(profile.prefersNotifications ? "On": "Off" )")
-                Text("Seasonal Photos: \(profile.seasonalPhoto.rawValue)")
-                Text("Goal Date: ") + Text(profile.goalDate, style: .date)
+                Text("Audio Mode: \(profile.seasonalPhoto.rawValue)")
+                Text("Start Date: ") + Text(profile.goalDate, style: .date)
 
                 Divider()
 
@@ -30,10 +30,10 @@ struct ProfileSummary: View {
 
                     ScrollView(.horizontal) {
                         HStack {
-                            HikeBadge(name: "First Hike")
-                            HikeBadge(name: "Earth Day")
+                            HikeBadge(name: "First Podcast Listen")
+                            HikeBadge(name: "First Upload Badge")
                                 .hueRotation(Angle(degrees: 90))
-                            HikeBadge(name: "Tenth Hike")
+                            HikeBadge(name: "1 Day Listening Badge")
                                 .grayscale(0.5)
                                 .hueRotation(Angle(degrees: 45))
                         }
@@ -44,7 +44,7 @@ struct ProfileSummary: View {
                 Divider()
 
                 VStack(alignment: .leading) {
-                    Text("Recent Hikes")
+                    Text("Recent Podcasts")
                         .font(.headline)
 
                     HikeView(hike: modelData.hikes[0])

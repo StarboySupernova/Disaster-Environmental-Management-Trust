@@ -29,7 +29,7 @@ struct HikeView: View {
                 VStack(alignment: .leading) {
                     Text(hike.name)
                         .font(.headline)
-                    Text(hike.distanceText)
+                    Text("6.3 hours")
                 }
 
                 Spacer()

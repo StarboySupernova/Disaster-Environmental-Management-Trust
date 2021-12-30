@@ -2,7 +2,7 @@
 //  GradientBackground.swift
 //  Disaster Environmental Management Trust
 //
-//  Created by user207077 on 12/10/21.
+//  Created by Simbarashe Dombodzvuku on 12/10/21.
 //
 
 import SwiftUI

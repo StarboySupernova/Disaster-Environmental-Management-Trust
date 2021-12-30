@@ -29,9 +29,9 @@ struct ProfileEditor: View {
             }
 
             VStack(alignment: .leading, spacing: 20) {
-                Text("Seasonal Photo").bold()
+                Text("Audio Mode").bold()
 
-                Picker("Seasonal Photo", selection: $profile.seasonalPhoto) {
+                Picker("Audio Mode≥", selection: $profile.seasonalPhoto) {
                     ForEach(Profile.Season.allCases) { season in
                         Text(season.rawValue).tag(season)
                     }
@@ -40,7 +40,7 @@ struct ProfileEditor: View {
             }
 
             DatePicker(selection: $profile.goalDate, in: dateRange, displayedComponents: .date) {
-                Text("Goal Date").bold()
+                Text("Start Date").bold()
             }
         }
     }
